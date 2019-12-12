@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import time
 
-data = pd.read_csv("mmz.csv") 
+data = pd.read_csv("list.csv") 
 datatodictionary = data.to_dict()['url']
 sources = []
 
