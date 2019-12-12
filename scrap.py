@@ -18,7 +18,7 @@ active = []
 #starting looping
 for id in sources:
     r = requests.get(id)
-    soup = BeautifulSoup(r.content, "lxml")
+    soup = BeautifulSoup(r.content, "html.parser")
 
     #append sooping result into array
     url.append(id)
